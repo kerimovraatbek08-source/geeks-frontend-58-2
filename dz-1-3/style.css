@@ -1,0 +1,38 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #555;
+  gap: 40px;
+}
+.block {
+  width: 150px;
+  height: 400px;
+  background-color: black;
+  border-radius: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.light {
+  width: 80px;
+  height: 80px;
+  background-color: #777;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.light + .light {
+  margin-top: 20px;
+}
+.light-text {
+  font-size: 48px;
+  color: black;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
