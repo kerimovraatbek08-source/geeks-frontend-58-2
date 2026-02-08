@@ -1,0 +1,29 @@
+body {
+  overflow: hidden;
+  background-color: rgb(48, 96, 173);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+input {
+  padding: 20px;
+  font-size: 30px;
+  outline: none;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+button {
+  padding: 10px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgb(47, 227, 47);
+  border-radius: 5px;
+}
