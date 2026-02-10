@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+.slider {
+  display: flex;
+  width: 90%;
+  height: 400px;
+  gap: 10px;
+}
+
+.slide {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.slide.active {
+  flex: 5;
+}
