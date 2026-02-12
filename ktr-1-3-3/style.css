@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: auto;
+}
+
+.item {
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.question {
+  padding: 15px;
+  background: #7c8fa8;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.arrow::after {
+  content: "↓";
+  font-size: 18px;
+}
+
+.item.active .arrow::after {
+  content: "↑";
+}
+
+.answer {
+  display: none;
+  padding: 15px;
+  background: #fff;
+}
+
+.item.active .answer {
+  display: block;
+}
