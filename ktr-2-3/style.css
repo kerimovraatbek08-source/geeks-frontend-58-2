@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+
+.container {
+  text-align: center;
+}
+
+.seasons button {
+  padding: 15px 35px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+#winter {
+  background: #5dade2;
+}
+#spring {
+  background: #2ecc71;
+}
+#summer {
+  background: #f4d03f;
+  color: black;
+}
+#autumn {
+  background: #e67e22;
+}
+
+.months {
+  margin-top: 30px;
+}
+
+.month-btn {
+  padding: 15px 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+}
