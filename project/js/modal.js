@@ -18,3 +18,15 @@ modal.onclick = (event) => {
     closeModal();
   }
 };
+
+setTimeout(openModal, 10000);
+
+const showModalByScroll = () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    openModal();
+
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+};
+
+window.addEventListener("scroll", showModalByScroll);

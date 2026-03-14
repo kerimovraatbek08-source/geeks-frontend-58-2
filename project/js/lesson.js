@@ -93,6 +93,19 @@ tabContentItemsParent.onmousemove = (event) => {
   }
 };
 
+let tabIndex = 0;
+
+setInterval(() => {
+  tabIndex++;
+
+  if (tabIndex >= tabContentBlocks.length) {
+    tabIndex = 0;
+  }
+
+  hideTabContent();
+  showTabContent(tabIndex);
+}, 3000);
+
 // Converter
 const somInput = document.querySelector("#som");
 const usdInput = document.querySelector("#usd");
